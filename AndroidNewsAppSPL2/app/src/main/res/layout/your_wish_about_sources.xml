@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.iit.androidnewsappspl2.ItemCategoryList"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:tooltipText="head line"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+        <LinearLayout
+            android:id="@+id/vanish_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            android:layout_weight="8"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/darkColorAccent"
+
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/add">
+
+
+                <TextView
+                    android:id="@+id/prefer_sources"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/darkColorAccent"
+                    android:focusable="true"
+                    android:layout_gravity="center_horizontal"
+
+                    android:paddingTop="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="20dp"
+                    android:text="Add your prefer Sources"
+                    android:textSize="18sp"
+                    tools:ignore="MissingConstraints,OnClick"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+
+                <ImageView
+                    android:id="@+id/like_imojis"
+
+
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="0dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/like_imojis"
+                    android:layout_gravity="right"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/darkColorAccent"
+
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/block">
+
+
+                <TextView
+                    android:id="@+id/block_sources"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/darkColorAccent"
+                    android:focusable="true"
+                    android:layout_gravity="center_horizontal"
+
+                    android:paddingTop="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="20dp"
+                    android:text="Block your boring Sources"
+                    android:textSize="18sp"
+                    tools:ignore="MissingConstraints,OnClick"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+
+                <ImageView
+                    android:id="@+id/dislike_imojis"
+
+
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="0dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/dislike_imojis"
+                    android:layout_gravity="right"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

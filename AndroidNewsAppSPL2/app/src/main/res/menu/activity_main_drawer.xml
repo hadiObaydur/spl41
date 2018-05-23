@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="Home" />
+        <item
+            android:id="@+id/headlinesection"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="headline section" />
+
+        <item
+            android:id="@+id/prefer_sources"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="prefer your sources" />
+
+
+    </group>
+    <group android:id="@+id/middlegroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/language"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="country and language" />
+        <item
+            android:id="@+id/darktheme"
+            android:title="change theme"
+             />
+
+
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+
+                android:id="@+id/fb"
+                android:icon="@drawable/facebook"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/gplus"
+                android:icon="@drawable/googleplus"
+                android:title="Google +" />
+            <item
+                android:id="@+id/twitter"
+                android:icon="@drawable/twitter"
+                android:title="Twitter" />
+            <item
+                android:id="@+id/youtube"
+                android:icon="@drawable/youtube"
+                android:title="Youtube" />
+            <item
+                android:id="@+id/github"
+                android:icon="@drawable/github1"
+                android:title="Github" />
+        </menu>
+    </item>
+
+</menu>
